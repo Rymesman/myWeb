@@ -1,83 +1,76 @@
 body {
-    margin: 0;
+    margin: auto;
 }
 .zone {
     /* padding: 30px 50px;
     margin: 40px 60px;
-    display: inline-block;  */
-    font-size: 2em;
-    color: #f4f4f4;
+    display: inline-block; */
+    /* font-size: 1em; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
-    border: 2px solid forestgreen;
-    border-radius: 4px;
+    color: #fff;
+    border: 4px;
+    border-radius: 2px solid #00f4f4;
     transition: all 2s linear;
 }
-section {
-    line-height: 20px;
-}
-ul {
-    line-height: 20px;
-}
-.corperate {
-    display: flex;
-    line-height: 3px;
-}
-img {
-    float: left;
-    padding: 5px;
-    margin: 10px;
-}
-footer {
-    clear: both;
-    text-align: centeraz;
-}
-.img {
-    width: 900%;
-    height: 800px;
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .grid-wrapper {
     display: grid;
     grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
-.cover {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    height: 100vh;
+.box > img {
+    width: 100%;
+}
+.box {
+    padding: 130px;
+    margin: 30px;
+    background-color: gray;
+}
+.main-nav {
+    display: flex;
+    font-size: 0.9em;
+    margin: 0;
+}
+li {
+    list-style: none;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
 }
 .push {
     margin-left: auto;
 }
 @media only screen and (max-width: 600px) {
-    li {
-        font-size: 20px;
-        padding: 0.5em;
+    .main-nav {
+        font-size: 0.7em;
+        padding: 0;
     }
 }
-.main-nav {
+.cover {
     display: flex;
-    font-size: 0.7em;
-    list-style: none;
-}
-li {
-    padding: 20px;
-}
-a {
-    text-decoration: none;
-    color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: centerc;
 }
 .zone:hover {
-    box-shadow: rgba(0, 0, 0, 0.8) 5px 10px 20px, inset rgba(0, 0, 0, 0.8) -5px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) -5px 10px 15px, inset rgba(0, 0, 0, 0.8) -5px 10px 15px;
 }
-.blue {
-    background: #0f4;
+.green {
+    background-color: greenyellow;
 }
-.red {
-    background: #00ffff;
+.purple {
+    background-color: purple;
+}
+.pink {
+    background-color: palevioletred;
 }
 .orange {
-    background: #0f5f4f;
-}
-.brown {
-    background: darkgray;
+    background-color: gainsboro;
 }
